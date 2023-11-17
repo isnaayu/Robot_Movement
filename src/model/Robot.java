@@ -15,24 +15,24 @@ public class Robot implements Action {
         for (String c : commands){
             if (c.equalsIgnoreCase("A" ) && this.direction.equals(Properties.E.name())){
                 this.x++;
-                System.out.println(">"+c+" -> "+"( "+getX()+","+getY()+" )"+getDirection());
+                System.out.println(">"+c+" -> "+"( "+getX()+","+getY()+" )");
             } else if (c.equalsIgnoreCase("A" ) && this.direction.equals(Properties.W.name())) {
                 this.x--;
-                System.out.println(">"+c+" ->"+"( "+getX()+","+getY()+" )"+getDirection());
+                System.out.println(">"+c+" ->"+"( "+getX()+","+getY()+" )");
             } else if (c.equalsIgnoreCase("A" ) && this.direction.equals(Properties.N.name())) {
                 this.y++;
-                System.out.println(">"+c+" ->"+"( "+getX()+","+getY()+" )"+getDirection());
+                System.out.println(">"+c+" ->"+"( "+getX()+","+getY()+" )");
             } else if (c.equalsIgnoreCase("A" ) && this.direction.equals(Properties.S.name())) {
                 this.y--;
-                System.out.println(">"+c+" ->"+"( "+getX()+","+getY()+" )"+getDirection());
+                System.out.println(">"+c+" ->"+"( "+getX()+","+getY()+" )");
             } else if (c.equalsIgnoreCase("R" )) {
                 this.direction = String.valueOf(direct.turnRight());
 //                direct.turnRight();
-                System.out.println(">"+c+" ->"+"( "+getX()+","+getY()+" )"+getDirection());
+                System.out.println(">"+c+" ->"+"( "+getX()+","+getY()+" )");
             } else if (c.equalsIgnoreCase("L" )) {
                 this.direction = String.valueOf(direct.turnLeft());
 //                direct.turnLeft();
-                System.out.println(">"+c+" ->"+"( "+getX()+" "+getY()+" )"+getDirection());
+                System.out.println(">"+c+" ->"+"( "+getX()+" "+getY()+" )");
             }else {
                 System.out.println("Invalid command !!");
             }
