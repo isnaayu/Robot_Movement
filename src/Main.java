@@ -2,8 +2,6 @@ import model.Robot;
 
 import java.util.Scanner;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -16,13 +14,8 @@ public class Main {
         command = input.next();
 
         String[] position = value.split(",");
-        for (String n : position){
-//            System.out.println(n + "");
-        }
+
         String[] commands = command.split("");
-        for (String word : commands){
-//            System.out.println(word+ " ");
-        }
 
         Robot robot = new Robot();
         robot.setCommands(commands);

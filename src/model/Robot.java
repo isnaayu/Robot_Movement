@@ -5,13 +5,11 @@ import util.Properties;
 public class Robot implements Action {
     private String direction;
     private String[] commands;
-//    private String position;
     private int x;
     private int y;
     @Override
     public void robotMovement(String direction, int x, int y) {
         Properties direct = Properties.valueOf(direction);
-        int index = 0;
         for (String c : commands){
             if (c.equalsIgnoreCase("A" ) && this.direction.equals(Properties.E.name())){
                 this.x++;
@@ -71,7 +69,4 @@ public class Robot implements Action {
         this.y = y;
     }
 
-    public void direction(){
-//        if ()
-    }
 }

@@ -11,15 +11,11 @@ public enum Properties {
         return direction;
     }
 
-//    Properties(String direction){
-//        this.direction = direction;
-//    }
-
 
     public Properties turnRight(){
-        return values()[this.ordinal()+1];
+        return values()[(this.ordinal()+1)% values().length ];
     }
     public Properties turnLeft(){
-        return values()[this.ordinal()-1];
+        return values()[(this.ordinal()-1) % values().length ];
     }
 }
